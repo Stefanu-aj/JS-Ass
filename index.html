@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+                console.log("=== Section A: JavaScript (Array Method)  ===");
+
+        // 1. push() and pop() methods
+        // The push() method adds one or more elements to the end of an array and returns the new length of the array.
+        // The pop() method removes the last element from an array and returns that element. This method changes the length of the array.
+        // Example of push() and pop() methods
+
+        let favourite_food = ["rice", "beans", "plantain", "yam", "egg", "chicken"];
+        
+        favourite_food.push("fish", "Sushi");
+        console.log(favourite_food);
+
+        favourite_food.pop();
+        console.log(favourite_food);  
+
+        // 2. filter() method
+        // The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+        // Example of filter() method
+        let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+
+        console.log(num.filter((x) => x % 2 === 0))
+
+        // 3. find() methods
+        // The find() method returns the value of the first element that passes a test. If no values pass the test, undefined is returned.
+        // Example of find() method
+
+        let players = [
+            { name: "Stefanu", goals: 55 },
+            { name: "Babs", goals: 10 },
+            { name: "John", goals: 35 }
+        ];
+        let top_scorer = players.find((player) => player.goals > 30);
+        console.log(top_scorer); // Output: { name: "Stefanu", goals: 55 }
+
+        console.log("\n=== Section B: JavaScript (Conditional Statement) ===");
+
+        // 1. if, else if, else statement
+
+        let user = {
+        name: "Stefanu Ajao",
+        age: 25,
+        city: "Ibadan",
+        Paid: true,
+        favouriteFood: ["rice", "beans", "plantain"]
+    };
+
+    if (user.Paid) {
+        console.log("Access granted");
+    } else {
+        console.log("Access denied");
+    }
+
+    let bal = "$5000"
+    if (bal >= "$5001") {
+        console.log("loan_eligible");
+    } else if (bal >= "$5000") {
+        console.log("loan_on_condition");
+    } else {
+        console.log("not_eligible");
+    }
+    // 2. Check if number is positive, negative or zero
+
+    let age = -5;
+    if (age >= 1) {
+        console.log("Positive number");
+    } else if (age < 0) {
+        console.log("Negative number");
+    } else {
+        console.log("Zero");
+    }
+
+    // 3. What is a Switch statement?
+    // The switch statement is used to perform different actions based on different conditions.
+    // It is an alternative to the if statement when you have multiple conditions to check.
+    // Example of switch statement
+    
+    let day = "Friday";
+    switch (day) {
+        case "Monday":
+            console.log("Start of work day!");
+            break;
+        case "Tuesday":
+            console.log("Second work day!");
+            break;
+        case "Wednesday":
+            console.log("Third work day!");
+            break;
+        case "Thursday":
+            console.log("Fourth work day!");
+            break;
+        case "Friday":
+            console.log("Thank God It's Friday!");
+            break;
+        case "Saturday":
+            console.log("It's weekend!");
+            break;
+        case "Sunday":
+            console.log("It's Sabbath!");
+            break;
+        default:
+            console.log("Inapplicable");
+    }
+
+    //4. Comparison operators
+    // Comparison operators are used to compare two values. The result of a comparison is a boolean value (true or false).
+    // Example of comparison operators
+
+    let a = 5;
+    let b = 20;
+    console.log(a === b); // equal to
+    console.log(a !== b); // not equal to
+    console.log(a > b); // greater than
+    console.log(a < b); // less than
+    console.log(a >= b); // greater than or equal to
+    console.log(a <= b); // less than or equal to
+
+    //5. Check if student passed or failed
+
+    let score = 75;
+    if (score >= 50) {
+        console.log("Passed");
+    } else {
+        console.log("Failed");
+    }
+
+    console.log("\n=== Section C: JavaScript (Function) ===");
+
+    // 1. What is a function?
+    // A function is a block of code that performs a specific task. It can take inputs (parameters) and return an output.
+    // A function can be defined without any parameters. In this case, it does not take any input.
+    // example of a function
+
+    function greet() {
+        console.log("Hello!");
+    }
+    greet(); // Output: Hello, World!
+
+    // 2. greetUser function
+    // A function that takes a name as a parameter and prints a greeting message to the console.
+    
+    function greetUser (name) {
+        console.log ("Hello " + name + "!");
+    }
+    greetUser("Stefanu")
+
+    // 3. Function to return product of two numbers
+    // A function that takes two numbers as parameters and returns their product.
+    
+    function multiply(a, b) {
+        return a * b;
+    }
+    let product = multiply(8, 7);
+    console.log(product); // Output: 56
+    </script>
+
+</body>
+</html>
