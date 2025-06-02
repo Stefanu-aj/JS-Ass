@@ -24,6 +24,7 @@ h1 {
   padding: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
+  position: relative;
 }
 
 .product:hover {
@@ -41,9 +42,48 @@ h1 {
   margin: 10px 0 5px;
   font-size: 18px;
 }
-
 .product p {
+  margin: 5px 0;
+}
+.stock-tab {
+  position: absolute;
+  top: 6px;
+  left: 10px;
+  background-color: orange;
+  color: black;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 1;
+}
+.price {
+  font-size: 17px;
+  color: black;
+  font-weight: bold;
+}
+.brand {
   margin: 5px 0;
   font-size: 14px;
   color: #333;
+}
+.ship {
+  font-size: 14px;
+  color: darkgray;
+  font-weight: 550;
+}
+.comment {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+.title {
+  padding-bottom: 12px;
+}
+.describe {
+  font-size: 15px;
+  color: #000;
+  font-weight: 600;
+  margin-top: 10px;
+  font-family: Helvetica, sans-serif, Arial;
 }

@@ -27,14 +27,17 @@ function displayProducts(products) {
     const li = document.createElement("li");
     li.className = "product";
     li.innerHTML =`
+      
+      <p class="stock-tab">${product.availabilityStatus}</p>
       <img src="${product.thumbnail}" alt="${product.title}">
-      <h3>${product.title}</h3>
-      <p>price: ${product.price}</p>
-      <p>${product.description.slice(0, 40)}...</p>
-      <p> comment: ${product.reviews[0].comment}</p>
-      <p>rating: ${product.shippingInformation}</p>
-      <p>available: ${product.availabilityStatus}</p>
-      <p>brand: ${product.brand}</p>
+      <h3 class="title">${product.title}</h3>
+      <p class="ship"> ${product.shippingInformation}</p>
+      <p class="price">$${product.price}</p>
+      <p class="describe">${product.description.slice(0, 60)}...</p>
+      <p class="brand">Brand: ${product.brand}</p>
+      <p class="comment">Comment: ${product.reviews[0].comment}</p>
+      
+      
     `;
     list.appendChild(li);
   })
