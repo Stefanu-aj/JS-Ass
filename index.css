@@ -59,13 +59,14 @@ h1 {
 }
 .price {
   font-size: 17px;
-  color: black;
+  color: orangered;
   font-weight: bold;
 }
 .brand {
   margin: 5px 0;
   font-size: 14px;
-  color: #333;
+  color: black;
+  font-weight: bold;
 }
 .ship {
   font-size: 14px;
@@ -75,7 +76,7 @@ h1 {
 .comment {
   margin: 5px 0;
   font-size: 14px;
-  color: #333;
+  color: black;
 }
 .title {
   padding-bottom: 12px;
